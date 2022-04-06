@@ -1,0 +1,22 @@
+{
+	"name": "svelte-flickity",
+	"version": "1.0.0",
+	"author": {
+		"name": "Daniel Untiedt",
+		"email": "dan@bugbit.io",
+		"url": "https://bugbit.io/"
+	},
+	"svelte": "src/Carousel.svelte",
+	"dependencies": {
+		"flickity": "^3.0.0"
+	},
+	"devDependencies": {
+		"svelte": "^3.46.6"
+	},
+	"keywords": [
+		"svelte",
+		"flickity",
+		"carousel",
+		"slider"
+	]
+}
