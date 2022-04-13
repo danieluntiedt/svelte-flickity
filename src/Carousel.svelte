@@ -1,10 +1,9 @@
-<script lang="ts">
-	import type Flickity from "flickity";
+<script>
 	import "flickity/css/flickity.css";
 
-	export let options: Flickity.Options;
+	export let options;
 
-	let flickity: Flickity | unknown;
+	let flickity;
 
 	function init(el) {
 		(import("flickity"))
