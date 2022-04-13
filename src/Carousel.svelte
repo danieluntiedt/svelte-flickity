@@ -1,12 +1,13 @@
-<script>
-	import "../../flickity/css/flickity.css";
+<script lang="ts">
+	import type Flickity from "flickity";
+	import "flickity/css/flickity.css";
 
-	export let options;
+	export let options: Flickity.Options;
 
-	let flickity;
+	let flickity: Flickity | unknown;
 
 	function init(el) {
-		(import('flickity'))
+		(import("flickity"))
 			.then((lib) => lib.default)
 			.then((carousel) => flickity = new carousel(el, options))
 			.catch((x) => console.log(x));
